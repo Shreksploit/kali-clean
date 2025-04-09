@@ -9,3 +9,5 @@ After cloning run ./install.sh from a non-root user in `/home/kali`. Will update
 ``` sh
 ./install.sh
 ```
+
+## WALLPAPER FIX + CMD customization

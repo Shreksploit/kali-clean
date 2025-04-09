@@ -11,3 +11,5 @@ sudo apt-get install sublime-text
 
 
 git clone https://github.com/Shreksploit/pentest_scripts.git
+
+sudo ln -s ~/../images/kali-red-sticker.jpg /usr/share/desktop-base/kali-theme/login/background.
