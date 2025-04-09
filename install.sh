@@ -14,7 +14,6 @@ sudo apt install kali-wallpapers-2023 -y
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 
 
-
 #Set keyboard layout to Belgian (temporary)
 sudo setxkbmap be
 #Set keyboard layout to Belgian (permanent)
