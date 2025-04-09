@@ -1,15 +1,40 @@
 #!/bin/bash
 
-sudo apt update && sudo apt upgrade -y
-sudo apt-get install autorecon
+sudo apt update -y && sudo apt upgrade -y
+
+sudo apt-get install autorecon -y
 
 #Sublime-text install
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get update -y
+sudo apt-get install sublime-text -y
+
+sudo apt install kali-wallpapers-2023 -y
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 
 
+
+#Set keyboard layout to Belgian (temporary)
+sudo setxkbmap be
+#Set keyboard layout to Belgian (permanent)
+sudo mkdir -p /etc/X11/xorg.conf.d/
+sudo touch /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo chown kali /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo echo "Section "InputClass"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo echo "    Identifier "system-keyboard"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo echo "    MatchIsKeyboard "on"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo echo "    Option "XkbLayout" "be"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo echo "EndSection" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+
+#Requires authentication (username + personal access token)
+#Access token on GitHub (Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
+cd /home/kali
 git clone https://github.com/Shreksploit/pentest_scripts.git
 
-sudo ln -s ~/../images/kali-red-sticker.jpg /usr/share/desktop-base/kali-theme/login/background.
+sudo reboot
+
+#WALLPAPER FIX 
+# lockscreen wallpaper fix
+#CMD customization
+#Custom screensaver

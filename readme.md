@@ -7,7 +7,8 @@ After cloning run ./install.sh from a non-root user in `/home/kali`. Will update
 ## Installation
 
 ``` sh
+chmod +x install.sh
 ./install.sh
 ```
 
-## WALLPAPER FIX + CMD customization
+>***Note***: Installation may take a while, final step to install pentest_scripts repo (requires authentication = username + personal access token).
