@@ -17,7 +17,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/la
 #Set keyboard layout to Belgian (temporary)
 sudo setxkbmap be
 #Set keyboard layout to Belgian (permanent)
-cp config/keyboard /etc/default/keyboard
+sudo cp config/keyboard /etc/default/keyboard
 
 #Requires authentication (username + personal access token)
 #Access token on GitHub (Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
