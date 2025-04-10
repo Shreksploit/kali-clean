@@ -23,6 +23,10 @@ sudo setxkbmap be
 #Set keyboard layout to Belgian (permanent)
 sudo cp config/keyboard /etc/default/keyboard
 
+#Config terminal
+sudo echo "TerminalEmulator=xfce4-terminal" > /home/kali/.config/xfce4/helpers.rc
+
+
 #Requires authentication (username + personal access token)
 #Access token on GitHub (Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
 cd /home/kali
@@ -30,7 +34,4 @@ git clone https://github.com/Shreksploit/pentest_scripts.git
 
 sudo reboot
 
-#WALLPAPER FIX 
-#CMD customization
-# lockscreen wallpaper fix
-#Custom screensaver
+#!!! MAYBE add some default terminal customization (XFCE4-terminal) 
