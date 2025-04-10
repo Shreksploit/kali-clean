@@ -10,6 +10,8 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update -y
 sudo apt-get install sublime-text -y
 
+#Alternative is to just set the wallpaper with this command
+#xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s images/kali-red-sticker-16x9.jpg
 sudo apt install kali-wallpapers-2023 -y
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 
@@ -27,6 +29,6 @@ git clone https://github.com/Shreksploit/pentest_scripts.git
 sudo reboot
 
 #WALLPAPER FIX 
-# lockscreen wallpaper fix
 #CMD customization
+# lockscreen wallpaper fix
 #Custom screensaver
