@@ -18,13 +18,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/la
 sudo setxkbmap be
 #Set keyboard layout to Belgian (permanent)
 sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo touch /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo chown kali /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo echo "Section "InputClass"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo echo "    Identifier "system-keyboard"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo echo "    MatchIsKeyboard "on"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo echo "    Option "XkbLayout" "be"" >> /etc/X11/xorg.conf.d/00-keyboard.conf
-sudo echo "EndSection" >> /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo cp ../config/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
 
 #Requires authentication (username + personal access token)
 #Access token on GitHub (Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
