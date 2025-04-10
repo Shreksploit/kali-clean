@@ -15,8 +15,8 @@ sudo apt-get install sublime-text -y
 sudo apt install kali-wallpapers-2023 -y
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 #Set lockscreen picture
-sudo cp images/kali-cubism-16x9.jpg /usr/share/desktop-base/kali-cubism-16x9.jpg
-sudo ln -sf /usr/share/desktop-base/kali-cubism-16x9.jpg /usr/share/desktop-base/kali-theme/login/background
+sudo cp images/kali-cubism.jpg /usr/share/desktop-base/kali-cubism.jpg
+sudo ln -sf /usr/share/desktop-base/kali-cubism.jpg /usr/share/desktop-base/kali-theme/login/background
 
 #Set keyboard layout to Belgian (temporary)
 sudo setxkbmap be
