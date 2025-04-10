@@ -35,6 +35,7 @@ git clone https://github.com/Shreksploit/pentest_scripts.git
 #Install extra tools
 cd pentest_scripts
 git clone https://github.com/testssl/testssl.sh.git
+git clone https://github.com/besimorhino/powercat.git
 
 sudo reboot
 
