@@ -36,6 +36,7 @@ git clone https://github.com/Shreksploit/pentest_scripts.git
 cd pentest_scripts
 git clone https://github.com/testssl/testssl.sh.git
 git clone https://github.com/besimorhino/powercat.git
+git clone https://github.com/ozguralp/gmapsapiscanner.git
 
 sudo reboot
 
