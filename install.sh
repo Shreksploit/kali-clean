@@ -41,3 +41,4 @@ git clone https://github.com/ozguralp/gmapsapiscanner.git
 sudo reboot
 
 #!!! MAYBE add some default terminal customization (XFCE4-terminal) 
+#Fix purpleknight install!!!
