@@ -32,6 +32,10 @@ sudo echo "TerminalEmulator=xfce4-terminal" > /home/kali/.config/xfce4/helpers.r
 cd /home/kali
 git clone https://github.com/Shreksploit/pentest_scripts.git
 
+#Install extra tools
+cd pentest_scripts
+git clone https://github.com/testssl/testssl.sh.git
+
 sudo reboot
 
 #!!! MAYBE add some default terminal customization (XFCE4-terminal) 
