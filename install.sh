@@ -42,7 +42,7 @@ git clone https://github.com/ozguralp/gmapsapiscanner.git
 sudo apt-get install bloodyad -y
 #Either install certipy-ad or certipy
 sudo apt-get install python3-certipy -y
-#sudo apt install certipy-ad -y
+pip install certipy-ad --break-system-package
 
 sudo apt autoremove -y
 
