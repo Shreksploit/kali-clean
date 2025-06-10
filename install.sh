@@ -37,8 +37,9 @@ cd pentest_scripts
 git clone https://github.com/testssl/testssl.sh.git
 git clone https://github.com/besimorhino/powercat.git
 git clone https://github.com/ozguralp/gmapsapiscanner.git
+sudo apt-get install bloodyad -y
+sudo apt install certipy-ad -y
 
 sudo reboot
 
 #!!! MAYBE add some default terminal customization (XFCE4-terminal) 
-#Fix purpleknight install!!!
