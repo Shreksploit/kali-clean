@@ -7,7 +7,7 @@ After cloning run ./install.sh from a non-root user in `/home/kali`. Will update
 ## Installation
 
 Final step to install pentest_scripts repo requires authentication = username + personal access token as password.
-(Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
+The access token can be found on GitHub under: Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo
 
 ``` sh
 chmod +x install.sh
