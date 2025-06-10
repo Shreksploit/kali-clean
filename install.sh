@@ -13,7 +13,8 @@ sudo apt-get install sublime-text -y
 #Alternative is to just set the wallpaper with this command
 #xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s images/kali-red-sticker-16x9.jpg
 sudo apt install kali-wallpapers-2023 -y
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
+#Following command is outdated to set desktop background?
+#xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/last-image -s /usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 #Set lockscreen picture
 sudo cp images/kali-cubism.jpg /usr/share/desktop-base/kali-cubism.jpg
 sudo ln -sf /usr/share/desktop-base/kali-cubism.jpg /usr/share/desktop-base/kali-theme/login/background
@@ -30,6 +31,7 @@ sudo echo "TerminalEmulator=xfce4-terminal" > /home/kali/.config/xfce4/helpers.r
 #Requires authentication (username + personal access token)
 #Access token on GitHub (Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token > Scope: repo)
 cd /home/kali
+mkdir htb
 git clone https://github.com/Shreksploit/pentest_scripts.git
 
 #Install extra tools
@@ -38,7 +40,11 @@ git clone https://github.com/testssl/testssl.sh.git
 git clone https://github.com/besimorhino/powercat.git
 git clone https://github.com/ozguralp/gmapsapiscanner.git
 sudo apt-get install bloodyad -y
-sudo apt install certipy-ad -y
+#Either install certipy-ad or certipy
+sudo apt-get install python3-certipy -y
+#sudo apt install certipy-ad -y
+
+sudo apt autoremove -y
 
 sudo reboot
 
